@@ -1,5 +1,6 @@
 .dropzone {
-    border: 1px dashed var(--stroke-defalt);
+    border: 2px dashed transparent;
+    outline: 1px dashed var(--stroke-defalt);
     border-radius: .25rem;
 
     display: grid;
@@ -24,10 +25,9 @@
     }
 
     &:hover, &:has(input:focus) {
-      border-width: 2px;
-      border-color:var(--stroke-highlight);
+      outline-width: 0;
+      border-color: var(--stroke-highlight);
       background-color: var(--surface-secondary);
-      color: var(--text-tertiary);
 
       & P {
         color: var(--text-tertiary);
